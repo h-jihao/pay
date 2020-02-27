@@ -43,7 +43,7 @@ public class IPayServiceImpl implements IPayService {
         log.info("payResponse:{}",payResponse);
 
         //签名校验
-        System.out.print("远端的修改，pull到本地")
+        System.out.print("远端的修改，pull到本地");
         //金额校验(异步通知的返回的金额信息和app订单中的金额是否相等)
 
         //订单支付支付状态修改
