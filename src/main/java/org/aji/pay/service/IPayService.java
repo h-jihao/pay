@@ -2,6 +2,7 @@ package org.aji.pay.service;
 
 import com.lly835.bestpay.enums.BestPayTypeEnum;
 import com.lly835.bestpay.model.PayResponse;
+import org.aji.pay.pojo.PayInfo;
 
 import java.math.BigDecimal;
 
@@ -22,5 +23,11 @@ public interface IPayService {
      */
     String asyncNotify(String notifyData);
 
+    /**
+     * 查询支付记录（通过订单号）
+     * @param orderId
+     * @return
+     */
+    PayInfo queryByOrderId(String orderId);
 
 }
